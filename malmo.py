@@ -1,9 +1,7 @@
 from micropsi_core.world.world import World
 from micropsi_core.world.worldadapter import ArrayWorldAdapter
-from xml_settings import mission_XML
+from xml_settings import missionXML
 import MalmoPython
-import os
-import time
 import sys
 import json
 import random
@@ -31,7 +29,7 @@ class Malmo(World):
             exit(0)
         
         #Build a mission and give it the configuration of the world. Note that we can change that later with Python (not XML) code.
-        self.my_mission = MalmoPython.MissionSpec(mission_XML, True)
+        self.my_mission = MalmoPython.MissionSpec(missionXML, True)
         self.my_mission_record = MalmoPython.MissionRecordSpec()
 
         #We may also store previous observations within Malmo, but let MicroPsi take care of remembering what they were.

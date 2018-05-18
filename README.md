@@ -24,6 +24,8 @@ Through actuator nodes, agents can send actions to the Minecraft world, and thro
 
 In the xml_settings file, you may change the XML file that sets up the experimental world. Currently this is a world with a fence around it and a few trees in there. The trees are spawned with Python code in the object_constructors file, to which you may add additional object constructors that you can use to add to the world.
 
+Note: it is important to keep <MissionQuitCommmands/> part of the XML, as this allows resetting a mission from the MicroPsi shell without running into a used server.
+
 
 ## Acknowledgments
 
